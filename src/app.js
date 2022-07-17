@@ -1,6 +1,7 @@
 import express from 'express'
 import morgan from 'morgan'
 import personaRoutes from './routes/persona.routes'
+import productoRoutes from './routes/producto.routes'
 
 
 
@@ -17,6 +18,7 @@ app.get('/', function(req, res, next) {
 });
 
 app.use('/persona', personaRoutes);
+app.use('/producto', productoRoutes);
 
 
 export default app;
